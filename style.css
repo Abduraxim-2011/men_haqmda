@@ -1,0 +1,407 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+body {
+  margin: 0;
+  background-color: #1F242D;
+}
+
+.w-50 {
+  width: 45%;
+}
+
+.w-30 {
+  width: 28%;
+}
+
+header h1 {
+  color: #FFFFFF;
+  font-size: 25px;
+}
+
+header a {
+  color: #FFFFFF;
+}
+
+.a-aqua {
+  color: aqua;
+}
+
+header a:hover {
+  color: aqua;
+}
+
+.a-aqua:hover {
+  color: #FFFFFF;
+
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #1F242D;
+}
+
+main {
+  padding-top: 100px;
+}
+
+main h1 {
+  color: #FFFFFF;
+  font-size: 32px;
+}
+
+.fsz {
+  font-size: 56px;
+}
+
+h1 span {
+  color: aqua;
+}
+
+main p {
+  color: #FFFFFF;
+}
+
+main i {
+  font-size: 30px;
+  color: aqua;
+  margin-right: 30px;
+}
+
+main button {
+  background-color: #00EEFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 40px;
+  margin-top: 30px;
+  color: #FFFFFF;
+}
+
+button a {
+  color: #FFFFFF;
+
+}
+
+main img {
+  width: 50%;
+  height: 300px;
+  border-radius: 100px;
+}
+
+main i:hover {
+  color: black;
+  border-radius: 50px;
+}
+
+main button:hover {
+  box-shadow: 0px 0px 10px 0px #00EEFF;
+
+}
+
+h1 span {
+  color: aqua;
+}
+
+h1 {
+  color: #FFFFFF;
+}
+
+.h1 {
+  font-size: 45px;
+  text-align: center;
+}
+
+.card {
+  width: 100%;
+  height: 300px;
+  background-color: #323946;
+  border-radius: 20px;
+}
+
+.card i {
+  font-size: 50px;
+  color: #00EEFF;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.card h1 {
+  text-align: center;
+}
+
+.card p {
+  text-align: center;
+  color: #ffffffb7;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px 0px #00EEFF;
+  transform: translateY(-20px);
+}
+
+@media screen and (min-width: 1024px) {
+  header .flex i {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  main .w-50 {
+    width: 50%;
+  }
+
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  header a {
+    display: none;
+  }
+
+  header {
+    display: flex;
+  }
+
+  section {
+    height: 220vh;
+  }
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 0px) {
+  .card {}
+}
+
+section {
+  height: 200vh;
+  background-color: #323946;
+
+}
+
+section h1 {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 45px;
+}
+
+.box {
+  width: 100%;
+  height: 300px;
+  background-color: #1F242D;
+  border-radius: 20px;
+}
+
+.box img {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.box:hover {
+  box-shadow: 0px 0px 10px 0px #00EEFF;
+  transform: translateY(-20px);
+}
+
+.h2 {
+  text-align: center;
+}
+
+.register-form {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  background-color: #323946;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  outline: none;
+
+}
+
+input:hover {
+  box-shadow: 0px 0px 10px 0px #00EEFF;
+}
+
+textarea {
+  background-color: #323946;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  outline: none;
+  width: 440px;
+  height: 200px;
+}
+
+textarea:hover {
+  box-shadow: 0px 0px 10px 0px #00EEFF;
+}
+
+.register-form button {
+  background-color: #00EEFF;
+  color: #323946;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: 40px;
+
+}
+
+.register-form button:hover {
+  box-shadow: 0px 0px 10px 0px #00EEFF;
+}
+
+footer {
+  padding: 10px;
+  background-color: #323946;
+  margin-top: 50px;
+  color: #FFFFFF;
+}
+
+.register-form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+input,
+textarea {
+  background-color: #323946;
+  border: 2px solid transparent;
+  padding: 12px 20px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  outline: none;
+  width: 45%;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+textarea {
+  width: 100%;
+  min-height: 150px;
+  resize: vertical;
+}
+
+input:hover,
+textarea:hover {
+  border-color: #00EEFF;
+  box-shadow: 0 0 10px rgba(0, 238, 255, 0.2);
+}
+
+input:focus,
+textarea:focus {
+  border-color: #00EEFF;
+  box-shadow: 0 0 15px rgba(0, 238, 255, 0.3);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.register-form button {
+  background-color: #00EEFF;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 40px;
+  color: #FFFFFF;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+  margin: 20px auto 0;
+}
+
+.register-form button:hover {
+  box-shadow: 0 0 20px rgba(0, 238, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 768px) {
+  input {
+    width: 100%;
+  }
+
+  .register-form {
+    padding: 20px;
+  }
+
+  .register-form button {
+    width: 100%;
+
+  }
+
+
+
+
+  main .w-50 {
+    width: 80%;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .card {}
+
+  section {
+    height: 220vh;
+
+  }
+main img {
+  margin-left: 90px;
+}
+
+
+  header {
+    padding: 5px;
+  }
+
+  header .a1 {
+    display: none;
+  }
+
+  header h1 {
+    text-align: start;
+  }
+
+
+  .card {}
+
+  .w-30 {
+    width: 50%;
+  }
+
+  section {}
+
+  .card {}
+
+}
